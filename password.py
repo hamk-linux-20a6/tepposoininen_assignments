@@ -13,7 +13,6 @@ if len  < 1:
         len = 8
 
 def password_generator(length):
-    # choose from all lowercase letter
     letters = string.ascii_letters + string.digits
     result = ''.join(random.choice(letters) for i in range(length))
     print(result)
